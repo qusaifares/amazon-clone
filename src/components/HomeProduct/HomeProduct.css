@@ -30,14 +30,14 @@
 }
 
 .homeProduct__button {
-  font-size: 14px;
-  font-weight: 600;
   background: #f0c14b;
+  height: 30px;
+  width: 110px;
   border: 1px solid;
   margin-top: 10px;
   border-color: #a88734 #9c7e31 #846a29;
+  border-radius: 2px;
   color: #111;
-  padding: 5px;
   cursor: pointer;
 }
 
