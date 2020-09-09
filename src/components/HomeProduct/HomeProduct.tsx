@@ -1,33 +1,38 @@
 import React from 'react';
 import './HomeProduct.css';
 
-import { StarRate } from '@material-ui/icons';
+import { Rating } from '@material-ui/lab';
 
-interface Props {}
+export interface Product {
+  title: string;
+  image?: string;
+  price: number;
+  rating: number;
+}
 
-const HomeProduct: React.FC<Props> = (props) => {
+interface Props {
+  product: Product;
+}
+
+const HomeProduct: React.FC<Props> = ({ product }) => {
+  const { title, image, price, rating } = product;
+
   return (
-    <div className='homeProduct'>
-      <div className='homeProduct__info'>
-        <p>The lean startup</p>
-        <p className='homeProduct__price'>
+    <div className="homeProduct">
+      <div className="homeProduct__info">
+        <p>{title}</p>
+        <p className="homeProduct__price">
           <small>$</small>
-          <strong>19.99</strong>
+          <strong>{price}</strong>
         </p>
-        <div className='homeProduct__rating'>
-          <StarRate />
-          <StarRate />
-          <StarRate />
+        <div className="homeProduct__rating">
+          <Rating value={rating} precision={0.5} readOnly />
         </div>
       </div>
 
-      <img
-        src='https://images-na.ssl-images-amazon.com/images/I/51Zymoq7UnL._AC_SY400_.jpg'
-        alt=''
-        className='homeProduct__img'
-      />
+      <img src={image} alt="" className="homeProduct__img" />
 
-      <button className='homeProduct__button'>Add to Basket</button>
+      <button className="homeProduct__button">Add to Basket</button>
     </div>
   );
 };

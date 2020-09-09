@@ -3,7 +3,8 @@
   flex-direction: column;
   justify-content: center;
   margin: 0 auto;
-  max-width: 1500px;
+  max-width: 1850px;
+  width: 100%;
 }
 
 .home__image {
@@ -17,4 +18,13 @@
   display: flex;
   z-index: 1;
   margin: 0 5px;
+}
+
+@media (max-width: 650px) {
+  .home__row {
+    flex-direction: column;
+  }
+  .home__image {
+    margin-bottom: -60px;
+  }
 }

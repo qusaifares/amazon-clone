@@ -8,33 +8,33 @@ interface Props {}
 
 const Header: React.FC<Props> = (props) => {
   return (
-    <div className='header'>
-      <img className='header__logo' src={logo} alt='' />
+    <div className="header">
+      <img className="header__logo" src={logo} alt="" />
 
-      <div className='header__search'>
-        <input type='text' className='header__searchInput' />
-        <Search className='header__searchIcon' />
+      <div className="header__search">
+        <input type="text" className="header__searchInput" />
+        <Search className="header__searchIcon" />
       </div>
 
-      <div className='header__nav'>
-        <div className='header__option'>
-          <span className='header__optionTop'>Hello Guest</span>
-          <span className='header__optionBottom'>Sign In</span>
+      <div className="header__nav">
+        <div className="header__option">
+          <span className="header__optionTop">Hello Guest</span>
+          <span className="header__optionBottom">Sign In</span>
         </div>
 
-        <div className='header__option'>
-          <span className='header__optionTop'>Returns</span>
-          <span className='header__optionBottom'>& Orders</span>
+        <div className="header__option">
+          <span className="header__optionTop">Returns</span>
+          <span className="header__optionBottom">& Orders</span>
         </div>
 
-        <div className='header__option'>
-          <span className='header__optionTop'>Your</span>
-          <span className='header__optionBottom'>Prime</span>
+        <div className="header__option">
+          <span className="header__optionTop">Your</span>
+          <span className="header__optionBottom">Prime</span>
         </div>
 
-        <div className='header__optionBasket'>
+        <div className="header__optionBasket">
           <ShoppingBasket />
-          <span className='header__optionBottom header__basketCount'>3</span>
+          <span className="header__optionBottom header__basketCount">3</span>
         </div>
       </div>
     </div>
