@@ -9,7 +9,14 @@
   max-height: 500px;
   max-width: 1000px;
   background-color: white;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
   z-index: 1;
+  transition: all 50ms ease-in;
+}
+
+.homeProduct:hover {
+  transform: scale(1.005);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
 }
 
 .homeProduct__img {
@@ -39,6 +46,10 @@
   border-radius: 2px;
   color: #111;
   cursor: pointer;
+}
+
+.homeProduct__button:hover {
+  background-color: #ffca44;
 }
 
 .homeProduct__star-filled {
